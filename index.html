@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <tittle>Lapsus Napoleón Franco</tittle>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <h1 id="tittle"> Lapsus Napoleón Franco </h1>
+    <div id="registroContainer"> 
+    <h3 id="subtitle">Registra el candidato para la encuesta</h3>
+    <input id="cedula" placeholder="Id" type="text"> 
+    <input id="nombre" placeholder="Nombre" type="text"> 
+    
+
+    <button id="Registrate_boton">Registrar</button>
+
+    <h3 id="subtitle">Vota por el cadidato usados su ID</h3>
+    <input id="id" placeholder="Id" type="text"> 
+    <button id="votar_boton">Votar</button>
+    <button id="candidato_boton">Ver cadidato</button>
+    <button id="votacion_boton">Ver votaciones</button>
+
+    </div>
+
+</body>
+<script src="https://www.gstatic.com/firebasejs/8.4.1/firebase.js"></script>
+
+<script>
+ 
+    var firebaseConfig = {
+      apiKey: "AIzaSyAS62U-oWBDa948bUn1YVNtXpSaPDlFVv4",
+      authDomain: "semana10eco.firebaseapp.com",
+      databaseURL: "https://semana10eco-default-rtdb.firebaseio.com",
+      projectId: "semana10eco",
+      storageBucket: "semana10eco.appspot.com",
+      messagingSenderId: "1010940589612",
+      appId: "1:1010940589612:web:0faa33c0bd5a4609aac389",
+      measurementId: "G-SQXWJ2G2LN"
+    };
+  
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
+
+<script src="js/index.js"></script>
+
+
+
+</html>
+
